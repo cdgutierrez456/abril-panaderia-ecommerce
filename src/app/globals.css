@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  /* Paleta Abril: crema, marrón cacao y rosa. Los tokens son los mismos que
+     ya usaba el catálogo, así que ficha, galería y panel se repintan solos. */
+  --color-paper: #fbf6f2;
+  --color-surface: #ffffff;
+  --color-ink: #4e2e29;
+  --color-muted: #7a5750;
+  --color-faint: #a8837a;
+  --color-line: #e8d9d2;
+  --color-wash: #f7efea;
+  /* Marrón de marca: botones, títulos y la banda oscura. */
+  --color-brand: #7b4b44;
+  /* Rosa de marca: fondos de sección y etiquetas de precio. */
+  --color-rose: #f3d2df;
+  --color-rose-ink: #9c6a7c;
+  /* El rojo se reserva para lo irreversible: usarlo en otra cosa le quita el
+     significado. */
+  --color-danger: #b42318;
+  /* Verde de marca de WhatsApp. Lleva texto oscuro a propósito: en blanco el
+     contraste queda en 2.2:1 y el texto pequeño se vuelve ilegible. */
+  --color-whatsapp: #25d366;
+
+  --font-sans: var(--font-jost), ui-sans-serif, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-serif: var(--font-cormorant), Georgia, "Times New Roman", serif;
+}
+
+/* ponytail: solo tema claro. La crema es el encargo; el modo oscuro se agrega
+   duplicando estas variables bajo prefers-color-scheme. */
+html {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-brand);
+  color: var(--color-paper);
+}
+
+@utility label {
+  font-size: 0.6875rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-faint);
+}
+
+/* Títulos de sección: serif ligera, el gesto que define la marca. */
+@utility display {
+  font-family: var(--font-serif);
+  font-weight: 300;
+  line-height: 1.05;
+  color: var(--color-brand);
+  text-wrap: balance;
+}
+
+@utility field {
+  width: 100%;
+  border: 1px solid var(--color-line);
+  background: var(--color-surface);
+  padding: 0.625rem 0.75rem;
+  font-size: 0.875rem;
+  outline: none;
+
+  &:focus {
+    border-color: var(--color-brand);
+  }
+}
