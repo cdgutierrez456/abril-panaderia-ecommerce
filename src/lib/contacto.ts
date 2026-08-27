@@ -1,6 +1,6 @@
 // Formato internacional sin + ni espacios: es lo que exige wa.me.
 // 57 = Colombia.
-const WHATSAPP = "573206548168";
+const WHATSAPP = "573006749548";
 
 export const whatsappUrl = (mensaje: string) =>
   `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(mensaje)}`;
