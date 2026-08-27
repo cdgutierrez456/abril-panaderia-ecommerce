@@ -55,6 +55,9 @@ export default async function TiendaLayout({ children }: { children: React.React
                 {c.name}
               </Link>
             ))}
+            <Link href="/conocenos" className="label whitespace-nowrap hover:text-brand">
+              Conócenos
+            </Link>
             <Link href="/#visitanos" className="label whitespace-nowrap hover:text-brand">
               Visítanos
             </Link>

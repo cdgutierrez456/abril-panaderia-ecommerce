@@ -193,58 +193,6 @@ export default async function Home({ searchParams }: PageProps<"/">) {
         )}
       </section>
 
-      <section id="nosotros" className="bg-brand text-paper/75">
-        <div className="mx-auto grid max-w-6xl scroll-mt-24 items-center gap-16 px-6 py-24 lg:grid-cols-2">
-          <div className="grid grid-cols-2 gap-4">
-            <div className="aspect-[3/4] overflow-hidden">
-              <Image
-                src="/torta-gym.png"
-                alt="Torta personalizada con figuras modeladas a mano"
-                width={600}
-                height={800}
-                className="size-full object-cover"
-              />
-            </div>
-            <div className="mt-11 aspect-[3/4] overflow-hidden">
-              <Image
-                src="/torta-85.png"
-                alt="Torta de 85 años en el salón de Abril"
-                width={600}
-                height={800}
-                className="size-full object-cover"
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-6">
-            <p className="label text-paper/45">Nosotros</p>
-            <h2 className="display text-4xl text-paper sm:text-5xl">
-              Un obrador
-              <br />
-              pequeño y terco
-            </h2>
-            <p className="text-lg leading-relaxed text-pretty">
-              Abril nació de una cocina de casa en La Sultana y hoy es una pastelería con horno
-              propio. Trabajamos con mantequilla de verdad, fruta de la plaza y café de fincas de
-              Caldas.
-            </p>
-            <p className="text-lg leading-relaxed text-pretty">
-              No hacemos stock: cada torta se hornea para alguien que ya tiene fecha y motivo.
-            </p>
-            <dl className="mt-2 flex divide-x divide-paper/20 border border-paper/20">
-              <div className="flex-1 p-6">
-                <dt className="font-serif text-3xl text-paper">2019</dt>
-                <dd className="label mt-1 text-paper/45">Primer horno</dd>
-              </div>
-              <div className="flex-1 p-6">
-                <dt className="font-serif text-3xl text-paper">+4.000</dt>
-                <dd className="label mt-1 text-paper/45">Tortas entregadas</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </section>
-
       <section id="pedido" className="bg-rose">
         <div className="mx-auto grid max-w-6xl scroll-mt-24 items-center gap-16 px-6 py-24 lg:grid-cols-2">
           <div className="flex flex-col gap-6">
